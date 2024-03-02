@@ -11,8 +11,13 @@
             "id": "e51918b63a868167",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "2. Areas/python/python.README.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
             }
           }
         ]
@@ -27,7 +32,7 @@
       {
         "id": "b454898db4c8f945",
         "type": "tabs",
-        "dimension": 42.756183745583044,
+        "dimension": 42.75618374558305,
         "children": [
           {
             "id": "9110575c83bff6ab",
@@ -42,7 +47,7 @@
       {
         "id": "84e30e37024d9f2a",
         "type": "tabs",
-        "dimension": 57.243816254416956,
+        "dimension": 57.24381625441695,
         "children": [
           {
             "id": "318abbbcd7749f6f",
@@ -60,7 +65,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#python/why",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -88,7 +93,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -108,6 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "2. Areas/python/python.README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "2. Areas/python/python.README.md"
+              }
             }
           },
           {
@@ -127,6 +136,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "2. Areas/python/python.README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -158,66 +168,69 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "command-palette:Open command palette": false,
-      "random-note:Open random note": false,
-      "workspaces:Manage workspace layouts": false,
+      "remotely-save:Remotely Save": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "command-palette:打开命令面板": false,
+      "random-note:开始漫游笔记": false,
+      "workspaces:管理工作区布局": false,
       "templater-obsidian:Templater": false,
       "periodic-para:Periodic PARA": false
     }
   },
-  "active": "e51918b63a868167",
+  "active": "cc8540b919f4ee67",
   "lastOpenFiles": [
-    "0. PeriodicNotes/Templates/Monthly.md",
-    "0. PeriodicNotes/2023/Monthly/2023-06.md",
-    "5. Express/blogs/Building my second brain 🧠 with Obsidian.md",
-    "5. Express/README.md",
-    "-1. Capture/README.md",
-    "5. Express/blogs",
-    "5. Express/未命名文件夹",
-    "-1. Capture/Quality software deserves your hard‑earned cash.md",
-    "-1. Capture/Predicting The Future.md",
-    "-1. Capture/Advice for ambitious 19 year olds.md",
-    "0. PeriodicNotes/2023/Weekly/2023-W22.md",
-    "0. PeriodicNotes/2023/Daily/06/2023-06-02.md",
-    "TASK.md",
-    "0. PeriodicNotes/2023/Weekly/2023-W23.md",
-    "0. PeriodicNotes/2023/Daily/06/2023-06-01.md",
-    "3. Resources/knowledge-management/knowledge-management.README.md",
-    "2. Areas/personal-brand/personal-brand.README.md",
-    "1. Projects/personal-brand-wot-sharing-meeting/wot-sharing-meeting.README.md",
+    "0. PeriodicNotes/2024/Daily/02/为什么adoc cicd不支持图片名字为中文的情况.md",
+    "0. PeriodicNotes/2024/Daily/03/python基本语法.md",
+    "0. PeriodicNotes/2024/Daily/03/为什么在循环过程中修改被迭代对象是不安全的.md",
+    "0. PeriodicNotes/2024/Daily/03/2024-03-02.md",
+    "2. Areas/python/python.README.md",
+    "2. Areas/python",
+    "1. Projects/leopard/leopard.README.md",
+    "0. PeriodicNotes/2024/Daily/02/2024-02-29.md",
+    "2. Areas/Coding/为什么可以使用set进行bfs.md",
+    "2. Areas/Coding/Coding.README.md",
     "4. Archives/parenting-take-a-name/take-a-name.README.md",
-    "0. PeriodicNotes/2023/2023.md",
-    "1. Projects/personal-brand-wot-sharing-meeting/Front-end Engineering Practice of ByteDance.pdf",
-    "0. PeriodicNotes/2023/Quarterly/2023-Q2.md",
-    "0. PeriodicNotes/2023/Daily/06/2023-06-11.md",
-    "0. PeriodicNotes/2023/Quarterly/2023-Q1.md",
-    "README.md",
-    "HOME.canvas",
     "0. PeriodicNotes/Templates/Yearly.md",
-    "0. PeriodicNotes/Templates/Quarterly.md",
+    "2. Areas/Coding",
     "0. PeriodicNotes/Templates/Weekly.md",
+    "0. PeriodicNotes/Templates/Quarterly.md",
+    "0. PeriodicNotes/Templates/Monthly.md",
     "0. PeriodicNotes/Templates/Daily.md",
-    "4. Archives/parenting-take-a-name/baby-name.png",
-    "4. Archives/parenting-take-a-name/林奕如.png",
-    "1. Projects/personal-brand-wot-sharing-meeting/architecture diagram/Polyrepo.svg",
-    "1. Projects/personal-brand-wot-sharing-meeting/architecture diagram/Monorepo.svg",
-    "0. PeriodicNotes/2024/Daily/02",
-    "0. PeriodicNotes/2024/Daily",
-    "0. PeriodicNotes/2024",
-    "0. PeriodicNotes/2022/Quarterly",
-    "0. PeriodicNotes/2022",
-    "0. PeriodicNotes/2023/Daily/06",
-    "0. PeriodicNotes/2023/Weekly",
-    "1. Projects/personal-brand-wot-sharing-meeting/Attachments/PPT 素材/warning.svg",
-    "1. Projects/personal-brand-wot-sharing-meeting/Attachments/PPT 素材/warning.png",
-    "1. Projects/personal-brand-wot-sharing-meeting/Attachments/PPT 素材/rollup-logo.svg",
-    "1. Projects/personal-brand-wot-sharing-meeting/Attachments/PPT 素材/repo-hero-logo-light.svg",
-    "1. Projects/personal-brand-wot-sharing-meeting/Attachments/PPT 素材/monitor.svg",
-    "1. Projects/personal-brand-wot-sharing-meeting/Attachments/PPT 素材/monitor.png",
+    "0. PeriodicNotes/2024/Daily/03/2024-03-01.md",
+    "随笔/李垚.md",
+    "随笔/吴瑶.md",
+    "随笔/待办.md",
+    "随笔/拜年.md",
+    "随笔/小小易.md",
+    "时间/日期组件.md",
+    "随笔/电视剧.md",
+    "随笔/情人节.md",
+    "随笔/心愿清单.md",
+    "随笔/朋友聚餐.md",
+    "随笔/HOME.canvas",
+    "1. Projects/leopard/attachments/02.上传.png",
+    "1. Projects/leopard/attachments/01.产品包.png",
+    "1. Projects/leopard/attachments/23.安装完成.png",
+    "1. Projects/leopard/attachments/21.安装确认.png",
+    "1. Projects/leopard/attachments/15.基础参数.png",
+    "1. Projects/leopard/attachments/22.安装开始.png",
+    "1. Projects/leopard/attachments/11.配置安全.png",
+    "1. Projects/leopard/attachments/17.展开详情.png",
+    "1. Projects/leopard/attachments/07.添加服务.png",
+    "1. Projects/leopard/attachments/19.自定义参数.png",
+    "0. PeriodicNotes/2024/Weekly",
+    "1. Projects/leopard/attachments",
+    "notes/dailies",
+    "2. Areas/允许时光虚度",
+    "2. Areas/打造个人博客品牌",
+    "1. Projects/leopard",
+    "时间",
+    "随笔",
+    "未命名.canvas",
+    "HOME.canvas",
     "主页.canvas",
     "Templates/HOME.canvas",
     "hello/HOME.canvas",

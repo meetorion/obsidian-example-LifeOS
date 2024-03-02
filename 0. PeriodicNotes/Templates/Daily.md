@@ -1,32 +1,30 @@
-## Project List
+## 项目列表
 %%A snapshot of the project today%%
 <% PeriodicPARA.Project.snapshot() %>
 
-## Daily Record
+## 日常记录
 %%Your Record%%
 
-## Habit
+## 习惯
 %%Habit will not be counted as a task%%
-- [ ] Drink a glass of water after wake up
-- [ ] Breakfast
-- Drink water
+- [ ] 健身10分钟
+- [ ] 1点前睡觉
+- 喝水
 	- [ ] +1
 	- [ ] +1
 	- [ ] +1
 	- [ ] +1
 	- [ ] +1
 	- [ ] +1
-- [ ] English learning course
-- [ ] Project time statistics
-- [ ] Household accounting
 
-## Energy allocation
+
+## 精力分配
 %%Today's project list, according to the time consumed, automatic statistics project time consumed percentage%%
 ```PeriodicPARA
 ProjectListByTime
 ```
 
-## Completed today
+## 今日完成事项
 %%List of tasks completed today, extracted from all notes%%
 ```PeriodicPARA
 TaskDoneListByTime

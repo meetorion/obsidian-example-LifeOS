@@ -1,0 +1,2 @@
+pyspark旧版的设计，在4.0中会被废弃掉，使用dtype来区别Int64和Float。
+故统一使用Index即可，不需要区别Int64Index和FloatIndex。

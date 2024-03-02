@@ -7514,6 +7514,300 @@ var require_lib = __commonJS({
   }
 });
 
+// node_modules/.pnpm/dayjs@1.11.10/node_modules/dayjs/dayjs.min.js
+var require_dayjs_min = __commonJS({
+  "node_modules/.pnpm/dayjs@1.11.10/node_modules/dayjs/dayjs.min.js"(exports, module2) {
+    !function(t2, e3) {
+      "object" == typeof exports && "undefined" != typeof module2 ? module2.exports = e3() : "function" == typeof define && define.amd ? define(e3) : (t2 = "undefined" != typeof globalThis ? globalThis : t2 || self).dayjs = e3();
+    }(exports, function() {
+      "use strict";
+      var t2 = 1e3, e3 = 6e4, n2 = 36e5, r = "millisecond", i2 = "second", s = "minute", u = "hour", a = "day", o3 = "week", c = "month", f = "quarter", h = "year", d = "date", l2 = "Invalid Date", $ = /^(\d{4})[-/]?(\d{1,2})?[-/]?(\d{0,2})[Tt\s]*(\d{1,2})?:?(\d{1,2})?:?(\d{1,2})?[.:]?(\d+)?$/, y = /\[([^\]]+)]|Y{1,4}|M{1,4}|D{1,2}|d{1,4}|H{1,2}|h{1,2}|a|A|m{1,2}|s{1,2}|Z{1,2}|SSS/g, M = { name: "en", weekdays: "Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday".split("_"), months: "January_February_March_April_May_June_July_August_September_October_November_December".split("_"), ordinal: function(t3) {
+        var e4 = ["th", "st", "nd", "rd"], n3 = t3 % 100;
+        return "[" + t3 + (e4[(n3 - 20) % 10] || e4[n3] || e4[0]) + "]";
+      } }, m = function(t3, e4, n3) {
+        var r2 = String(t3);
+        return !r2 || r2.length >= e4 ? t3 : "" + Array(e4 + 1 - r2.length).join(n3) + t3;
+      }, v = { s: m, z: function(t3) {
+        var e4 = -t3.utcOffset(), n3 = Math.abs(e4), r2 = Math.floor(n3 / 60), i3 = n3 % 60;
+        return (e4 <= 0 ? "+" : "-") + m(r2, 2, "0") + ":" + m(i3, 2, "0");
+      }, m: function t3(e4, n3) {
+        if (e4.date() < n3.date())
+          return -t3(n3, e4);
+        var r2 = 12 * (n3.year() - e4.year()) + (n3.month() - e4.month()), i3 = e4.clone().add(r2, c), s2 = n3 - i3 < 0, u2 = e4.clone().add(r2 + (s2 ? -1 : 1), c);
+        return +(-(r2 + (n3 - i3) / (s2 ? i3 - u2 : u2 - i3)) || 0);
+      }, a: function(t3) {
+        return t3 < 0 ? Math.ceil(t3) || 0 : Math.floor(t3);
+      }, p: function(t3) {
+        return { M: c, y: h, w: o3, d: a, D: d, h: u, m: s, s: i2, ms: r, Q: f }[t3] || String(t3 || "").toLowerCase().replace(/s$/, "");
+      }, u: function(t3) {
+        return void 0 === t3;
+      } }, g = "en", D = {};
+      D[g] = M;
+      var p = "$isDayjsObject", S = function(t3) {
+        return t3 instanceof _ || !(!t3 || !t3[p]);
+      }, w = function t3(e4, n3, r2) {
+        var i3;
+        if (!e4)
+          return g;
+        if ("string" == typeof e4) {
+          var s2 = e4.toLowerCase();
+          D[s2] && (i3 = s2), n3 && (D[s2] = n3, i3 = s2);
+          var u2 = e4.split("-");
+          if (!i3 && u2.length > 1)
+            return t3(u2[0]);
+        } else {
+          var a2 = e4.name;
+          D[a2] = e4, i3 = a2;
+        }
+        return !r2 && i3 && (g = i3), i3 || !r2 && g;
+      }, O = function(t3, e4) {
+        if (S(t3))
+          return t3.clone();
+        var n3 = "object" == typeof e4 ? e4 : {};
+        return n3.date = t3, n3.args = arguments, new _(n3);
+      }, b = v;
+      b.l = w, b.i = S, b.w = function(t3, e4) {
+        return O(t3, { locale: e4.$L, utc: e4.$u, x: e4.$x, $offset: e4.$offset });
+      };
+      var _ = function() {
+        function M2(t3) {
+          this.$L = w(t3.locale, null, true), this.parse(t3), this.$x = this.$x || t3.x || {}, this[p] = true;
+        }
+        var m2 = M2.prototype;
+        return m2.parse = function(t3) {
+          this.$d = function(t4) {
+            var e4 = t4.date, n3 = t4.utc;
+            if (null === e4)
+              return new Date(NaN);
+            if (b.u(e4))
+              return new Date();
+            if (e4 instanceof Date)
+              return new Date(e4);
+            if ("string" == typeof e4 && !/Z$/i.test(e4)) {
+              var r2 = e4.match($);
+              if (r2) {
+                var i3 = r2[2] - 1 || 0, s2 = (r2[7] || "0").substring(0, 3);
+                return n3 ? new Date(Date.UTC(r2[1], i3, r2[3] || 1, r2[4] || 0, r2[5] || 0, r2[6] || 0, s2)) : new Date(r2[1], i3, r2[3] || 1, r2[4] || 0, r2[5] || 0, r2[6] || 0, s2);
+              }
+            }
+            return new Date(e4);
+          }(t3), this.init();
+        }, m2.init = function() {
+          var t3 = this.$d;
+          this.$y = t3.getFullYear(), this.$M = t3.getMonth(), this.$D = t3.getDate(), this.$W = t3.getDay(), this.$H = t3.getHours(), this.$m = t3.getMinutes(), this.$s = t3.getSeconds(), this.$ms = t3.getMilliseconds();
+        }, m2.$utils = function() {
+          return b;
+        }, m2.isValid = function() {
+          return !(this.$d.toString() === l2);
+        }, m2.isSame = function(t3, e4) {
+          var n3 = O(t3);
+          return this.startOf(e4) <= n3 && n3 <= this.endOf(e4);
+        }, m2.isAfter = function(t3, e4) {
+          return O(t3) < this.startOf(e4);
+        }, m2.isBefore = function(t3, e4) {
+          return this.endOf(e4) < O(t3);
+        }, m2.$g = function(t3, e4, n3) {
+          return b.u(t3) ? this[e4] : this.set(n3, t3);
+        }, m2.unix = function() {
+          return Math.floor(this.valueOf() / 1e3);
+        }, m2.valueOf = function() {
+          return this.$d.getTime();
+        }, m2.startOf = function(t3, e4) {
+          var n3 = this, r2 = !!b.u(e4) || e4, f2 = b.p(t3), l3 = function(t4, e5) {
+            var i3 = b.w(n3.$u ? Date.UTC(n3.$y, e5, t4) : new Date(n3.$y, e5, t4), n3);
+            return r2 ? i3 : i3.endOf(a);
+          }, $2 = function(t4, e5) {
+            return b.w(n3.toDate()[t4].apply(n3.toDate("s"), (r2 ? [0, 0, 0, 0] : [23, 59, 59, 999]).slice(e5)), n3);
+          }, y2 = this.$W, M3 = this.$M, m3 = this.$D, v2 = "set" + (this.$u ? "UTC" : "");
+          switch (f2) {
+            case h:
+              return r2 ? l3(1, 0) : l3(31, 11);
+            case c:
+              return r2 ? l3(1, M3) : l3(0, M3 + 1);
+            case o3:
+              var g2 = this.$locale().weekStart || 0, D2 = (y2 < g2 ? y2 + 7 : y2) - g2;
+              return l3(r2 ? m3 - D2 : m3 + (6 - D2), M3);
+            case a:
+            case d:
+              return $2(v2 + "Hours", 0);
+            case u:
+              return $2(v2 + "Minutes", 1);
+            case s:
+              return $2(v2 + "Seconds", 2);
+            case i2:
+              return $2(v2 + "Milliseconds", 3);
+            default:
+              return this.clone();
+          }
+        }, m2.endOf = function(t3) {
+          return this.startOf(t3, false);
+        }, m2.$set = function(t3, e4) {
+          var n3, o4 = b.p(t3), f2 = "set" + (this.$u ? "UTC" : ""), l3 = (n3 = {}, n3[a] = f2 + "Date", n3[d] = f2 + "Date", n3[c] = f2 + "Month", n3[h] = f2 + "FullYear", n3[u] = f2 + "Hours", n3[s] = f2 + "Minutes", n3[i2] = f2 + "Seconds", n3[r] = f2 + "Milliseconds", n3)[o4], $2 = o4 === a ? this.$D + (e4 - this.$W) : e4;
+          if (o4 === c || o4 === h) {
+            var y2 = this.clone().set(d, 1);
+            y2.$d[l3]($2), y2.init(), this.$d = y2.set(d, Math.min(this.$D, y2.daysInMonth())).$d;
+          } else
+            l3 && this.$d[l3]($2);
+          return this.init(), this;
+        }, m2.set = function(t3, e4) {
+          return this.clone().$set(t3, e4);
+        }, m2.get = function(t3) {
+          return this[b.p(t3)]();
+        }, m2.add = function(r2, f2) {
+          var d2, l3 = this;
+          r2 = Number(r2);
+          var $2 = b.p(f2), y2 = function(t3) {
+            var e4 = O(l3);
+            return b.w(e4.date(e4.date() + Math.round(t3 * r2)), l3);
+          };
+          if ($2 === c)
+            return this.set(c, this.$M + r2);
+          if ($2 === h)
+            return this.set(h, this.$y + r2);
+          if ($2 === a)
+            return y2(1);
+          if ($2 === o3)
+            return y2(7);
+          var M3 = (d2 = {}, d2[s] = e3, d2[u] = n2, d2[i2] = t2, d2)[$2] || 1, m3 = this.$d.getTime() + r2 * M3;
+          return b.w(m3, this);
+        }, m2.subtract = function(t3, e4) {
+          return this.add(-1 * t3, e4);
+        }, m2.format = function(t3) {
+          var e4 = this, n3 = this.$locale();
+          if (!this.isValid())
+            return n3.invalidDate || l2;
+          var r2 = t3 || "YYYY-MM-DDTHH:mm:ssZ", i3 = b.z(this), s2 = this.$H, u2 = this.$m, a2 = this.$M, o4 = n3.weekdays, c2 = n3.months, f2 = n3.meridiem, h2 = function(t4, n4, i4, s3) {
+            return t4 && (t4[n4] || t4(e4, r2)) || i4[n4].slice(0, s3);
+          }, d2 = function(t4) {
+            return b.s(s2 % 12 || 12, t4, "0");
+          }, $2 = f2 || function(t4, e5, n4) {
+            var r3 = t4 < 12 ? "AM" : "PM";
+            return n4 ? r3.toLowerCase() : r3;
+          };
+          return r2.replace(y, function(t4, r3) {
+            return r3 || function(t5) {
+              switch (t5) {
+                case "YY":
+                  return String(e4.$y).slice(-2);
+                case "YYYY":
+                  return b.s(e4.$y, 4, "0");
+                case "M":
+                  return a2 + 1;
+                case "MM":
+                  return b.s(a2 + 1, 2, "0");
+                case "MMM":
+                  return h2(n3.monthsShort, a2, c2, 3);
+                case "MMMM":
+                  return h2(c2, a2);
+                case "D":
+                  return e4.$D;
+                case "DD":
+                  return b.s(e4.$D, 2, "0");
+                case "d":
+                  return String(e4.$W);
+                case "dd":
+                  return h2(n3.weekdaysMin, e4.$W, o4, 2);
+                case "ddd":
+                  return h2(n3.weekdaysShort, e4.$W, o4, 3);
+                case "dddd":
+                  return o4[e4.$W];
+                case "H":
+                  return String(s2);
+                case "HH":
+                  return b.s(s2, 2, "0");
+                case "h":
+                  return d2(1);
+                case "hh":
+                  return d2(2);
+                case "a":
+                  return $2(s2, u2, true);
+                case "A":
+                  return $2(s2, u2, false);
+                case "m":
+                  return String(u2);
+                case "mm":
+                  return b.s(u2, 2, "0");
+                case "s":
+                  return String(e4.$s);
+                case "ss":
+                  return b.s(e4.$s, 2, "0");
+                case "SSS":
+                  return b.s(e4.$ms, 3, "0");
+                case "Z":
+                  return i3;
+              }
+              return null;
+            }(t4) || i3.replace(":", "");
+          });
+        }, m2.utcOffset = function() {
+          return 15 * -Math.round(this.$d.getTimezoneOffset() / 15);
+        }, m2.diff = function(r2, d2, l3) {
+          var $2, y2 = this, M3 = b.p(d2), m3 = O(r2), v2 = (m3.utcOffset() - this.utcOffset()) * e3, g2 = this - m3, D2 = function() {
+            return b.m(y2, m3);
+          };
+          switch (M3) {
+            case h:
+              $2 = D2() / 12;
+              break;
+            case c:
+              $2 = D2();
+              break;
+            case f:
+              $2 = D2() / 3;
+              break;
+            case o3:
+              $2 = (g2 - v2) / 6048e5;
+              break;
+            case a:
+              $2 = (g2 - v2) / 864e5;
+              break;
+            case u:
+              $2 = g2 / n2;
+              break;
+            case s:
+              $2 = g2 / e3;
+              break;
+            case i2:
+              $2 = g2 / t2;
+              break;
+            default:
+              $2 = g2;
+          }
+          return l3 ? $2 : b.a($2);
+        }, m2.daysInMonth = function() {
+          return this.endOf(c).$D;
+        }, m2.$locale = function() {
+          return D[this.$L];
+        }, m2.locale = function(t3, e4) {
+          if (!t3)
+            return this.$L;
+          var n3 = this.clone(), r2 = w(t3, e4, true);
+          return r2 && (n3.$L = r2), n3;
+        }, m2.clone = function() {
+          return b.w(this.$d, this);
+        }, m2.toDate = function() {
+          return new Date(this.valueOf());
+        }, m2.toJSON = function() {
+          return this.isValid() ? this.toISOString() : null;
+        }, m2.toISOString = function() {
+          return this.$d.toISOString();
+        }, m2.toString = function() {
+          return this.$d.toUTCString();
+        }, M2;
+      }(), k = _.prototype;
+      return O.prototype = k, [["$ms", r], ["$s", i2], ["$m", s], ["$H", u], ["$W", a], ["$M", c], ["$y", h], ["$D", d]].forEach(function(t3) {
+        k[t3[1]] = function(e4) {
+          return this.$g(e4, t3[0], t3[1]);
+        };
+      }), O.extend = function(t3, e4) {
+        return t3.$i || (t3(e4, _, O), t3.$i = true), O;
+      }, O.locale = w, O.isDayjs = S, O.unix = function(t3) {
+        return O(1e3 * t3);
+      }, O.en = D[g], O.Ls = D, O.p = {}, O;
+    });
+  }
+});
+
 // node_modules/.pnpm/react@18.2.0/node_modules/react/cjs/react.development.js
 var require_react_development = __commonJS({
   "node_modules/.pnpm/react@18.2.0/node_modules/react/cjs/react.development.js"(exports, module2) {
@@ -8585,7 +8879,7 @@ var require_react_development = __commonJS({
           var dispatcher = resolveDispatcher();
           return dispatcher.useRef(initialValue);
         }
-        function useEffect53(create, deps) {
+        function useEffect54(create, deps) {
           var dispatcher = resolveDispatcher();
           return dispatcher.useEffect(create, deps);
         }
@@ -9367,7 +9661,7 @@ var require_react_development = __commonJS({
         exports.useContext = useContext93;
         exports.useDebugValue = useDebugValue;
         exports.useDeferredValue = useDeferredValue;
-        exports.useEffect = useEffect53;
+        exports.useEffect = useEffect54;
         exports.useId = useId3;
         exports.useImperativeHandle = useImperativeHandle15;
         exports.useInsertionEffect = useInsertionEffect3;
@@ -31301,300 +31595,6 @@ var require_classnames2 = __commonJS({
   }
 });
 
-// node_modules/.pnpm/dayjs@1.11.10/node_modules/dayjs/dayjs.min.js
-var require_dayjs_min = __commonJS({
-  "node_modules/.pnpm/dayjs@1.11.10/node_modules/dayjs/dayjs.min.js"(exports, module2) {
-    !function(t2, e3) {
-      "object" == typeof exports && "undefined" != typeof module2 ? module2.exports = e3() : "function" == typeof define && define.amd ? define(e3) : (t2 = "undefined" != typeof globalThis ? globalThis : t2 || self).dayjs = e3();
-    }(exports, function() {
-      "use strict";
-      var t2 = 1e3, e3 = 6e4, n2 = 36e5, r = "millisecond", i2 = "second", s = "minute", u = "hour", a = "day", o3 = "week", c = "month", f = "quarter", h = "year", d = "date", l2 = "Invalid Date", $ = /^(\d{4})[-/]?(\d{1,2})?[-/]?(\d{0,2})[Tt\s]*(\d{1,2})?:?(\d{1,2})?:?(\d{1,2})?[.:]?(\d+)?$/, y = /\[([^\]]+)]|Y{1,4}|M{1,4}|D{1,2}|d{1,4}|H{1,2}|h{1,2}|a|A|m{1,2}|s{1,2}|Z{1,2}|SSS/g, M = { name: "en", weekdays: "Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday".split("_"), months: "January_February_March_April_May_June_July_August_September_October_November_December".split("_"), ordinal: function(t3) {
-        var e4 = ["th", "st", "nd", "rd"], n3 = t3 % 100;
-        return "[" + t3 + (e4[(n3 - 20) % 10] || e4[n3] || e4[0]) + "]";
-      } }, m = function(t3, e4, n3) {
-        var r2 = String(t3);
-        return !r2 || r2.length >= e4 ? t3 : "" + Array(e4 + 1 - r2.length).join(n3) + t3;
-      }, v = { s: m, z: function(t3) {
-        var e4 = -t3.utcOffset(), n3 = Math.abs(e4), r2 = Math.floor(n3 / 60), i3 = n3 % 60;
-        return (e4 <= 0 ? "+" : "-") + m(r2, 2, "0") + ":" + m(i3, 2, "0");
-      }, m: function t3(e4, n3) {
-        if (e4.date() < n3.date())
-          return -t3(n3, e4);
-        var r2 = 12 * (n3.year() - e4.year()) + (n3.month() - e4.month()), i3 = e4.clone().add(r2, c), s2 = n3 - i3 < 0, u2 = e4.clone().add(r2 + (s2 ? -1 : 1), c);
-        return +(-(r2 + (n3 - i3) / (s2 ? i3 - u2 : u2 - i3)) || 0);
-      }, a: function(t3) {
-        return t3 < 0 ? Math.ceil(t3) || 0 : Math.floor(t3);
-      }, p: function(t3) {
-        return { M: c, y: h, w: o3, d: a, D: d, h: u, m: s, s: i2, ms: r, Q: f }[t3] || String(t3 || "").toLowerCase().replace(/s$/, "");
-      }, u: function(t3) {
-        return void 0 === t3;
-      } }, g = "en", D = {};
-      D[g] = M;
-      var p = "$isDayjsObject", S = function(t3) {
-        return t3 instanceof _ || !(!t3 || !t3[p]);
-      }, w = function t3(e4, n3, r2) {
-        var i3;
-        if (!e4)
-          return g;
-        if ("string" == typeof e4) {
-          var s2 = e4.toLowerCase();
-          D[s2] && (i3 = s2), n3 && (D[s2] = n3, i3 = s2);
-          var u2 = e4.split("-");
-          if (!i3 && u2.length > 1)
-            return t3(u2[0]);
-        } else {
-          var a2 = e4.name;
-          D[a2] = e4, i3 = a2;
-        }
-        return !r2 && i3 && (g = i3), i3 || !r2 && g;
-      }, O = function(t3, e4) {
-        if (S(t3))
-          return t3.clone();
-        var n3 = "object" == typeof e4 ? e4 : {};
-        return n3.date = t3, n3.args = arguments, new _(n3);
-      }, b = v;
-      b.l = w, b.i = S, b.w = function(t3, e4) {
-        return O(t3, { locale: e4.$L, utc: e4.$u, x: e4.$x, $offset: e4.$offset });
-      };
-      var _ = function() {
-        function M2(t3) {
-          this.$L = w(t3.locale, null, true), this.parse(t3), this.$x = this.$x || t3.x || {}, this[p] = true;
-        }
-        var m2 = M2.prototype;
-        return m2.parse = function(t3) {
-          this.$d = function(t4) {
-            var e4 = t4.date, n3 = t4.utc;
-            if (null === e4)
-              return new Date(NaN);
-            if (b.u(e4))
-              return new Date();
-            if (e4 instanceof Date)
-              return new Date(e4);
-            if ("string" == typeof e4 && !/Z$/i.test(e4)) {
-              var r2 = e4.match($);
-              if (r2) {
-                var i3 = r2[2] - 1 || 0, s2 = (r2[7] || "0").substring(0, 3);
-                return n3 ? new Date(Date.UTC(r2[1], i3, r2[3] || 1, r2[4] || 0, r2[5] || 0, r2[6] || 0, s2)) : new Date(r2[1], i3, r2[3] || 1, r2[4] || 0, r2[5] || 0, r2[6] || 0, s2);
-              }
-            }
-            return new Date(e4);
-          }(t3), this.init();
-        }, m2.init = function() {
-          var t3 = this.$d;
-          this.$y = t3.getFullYear(), this.$M = t3.getMonth(), this.$D = t3.getDate(), this.$W = t3.getDay(), this.$H = t3.getHours(), this.$m = t3.getMinutes(), this.$s = t3.getSeconds(), this.$ms = t3.getMilliseconds();
-        }, m2.$utils = function() {
-          return b;
-        }, m2.isValid = function() {
-          return !(this.$d.toString() === l2);
-        }, m2.isSame = function(t3, e4) {
-          var n3 = O(t3);
-          return this.startOf(e4) <= n3 && n3 <= this.endOf(e4);
-        }, m2.isAfter = function(t3, e4) {
-          return O(t3) < this.startOf(e4);
-        }, m2.isBefore = function(t3, e4) {
-          return this.endOf(e4) < O(t3);
-        }, m2.$g = function(t3, e4, n3) {
-          return b.u(t3) ? this[e4] : this.set(n3, t3);
-        }, m2.unix = function() {
-          return Math.floor(this.valueOf() / 1e3);
-        }, m2.valueOf = function() {
-          return this.$d.getTime();
-        }, m2.startOf = function(t3, e4) {
-          var n3 = this, r2 = !!b.u(e4) || e4, f2 = b.p(t3), l3 = function(t4, e5) {
-            var i3 = b.w(n3.$u ? Date.UTC(n3.$y, e5, t4) : new Date(n3.$y, e5, t4), n3);
-            return r2 ? i3 : i3.endOf(a);
-          }, $2 = function(t4, e5) {
-            return b.w(n3.toDate()[t4].apply(n3.toDate("s"), (r2 ? [0, 0, 0, 0] : [23, 59, 59, 999]).slice(e5)), n3);
-          }, y2 = this.$W, M3 = this.$M, m3 = this.$D, v2 = "set" + (this.$u ? "UTC" : "");
-          switch (f2) {
-            case h:
-              return r2 ? l3(1, 0) : l3(31, 11);
-            case c:
-              return r2 ? l3(1, M3) : l3(0, M3 + 1);
-            case o3:
-              var g2 = this.$locale().weekStart || 0, D2 = (y2 < g2 ? y2 + 7 : y2) - g2;
-              return l3(r2 ? m3 - D2 : m3 + (6 - D2), M3);
-            case a:
-            case d:
-              return $2(v2 + "Hours", 0);
-            case u:
-              return $2(v2 + "Minutes", 1);
-            case s:
-              return $2(v2 + "Seconds", 2);
-            case i2:
-              return $2(v2 + "Milliseconds", 3);
-            default:
-              return this.clone();
-          }
-        }, m2.endOf = function(t3) {
-          return this.startOf(t3, false);
-        }, m2.$set = function(t3, e4) {
-          var n3, o4 = b.p(t3), f2 = "set" + (this.$u ? "UTC" : ""), l3 = (n3 = {}, n3[a] = f2 + "Date", n3[d] = f2 + "Date", n3[c] = f2 + "Month", n3[h] = f2 + "FullYear", n3[u] = f2 + "Hours", n3[s] = f2 + "Minutes", n3[i2] = f2 + "Seconds", n3[r] = f2 + "Milliseconds", n3)[o4], $2 = o4 === a ? this.$D + (e4 - this.$W) : e4;
-          if (o4 === c || o4 === h) {
-            var y2 = this.clone().set(d, 1);
-            y2.$d[l3]($2), y2.init(), this.$d = y2.set(d, Math.min(this.$D, y2.daysInMonth())).$d;
-          } else
-            l3 && this.$d[l3]($2);
-          return this.init(), this;
-        }, m2.set = function(t3, e4) {
-          return this.clone().$set(t3, e4);
-        }, m2.get = function(t3) {
-          return this[b.p(t3)]();
-        }, m2.add = function(r2, f2) {
-          var d2, l3 = this;
-          r2 = Number(r2);
-          var $2 = b.p(f2), y2 = function(t3) {
-            var e4 = O(l3);
-            return b.w(e4.date(e4.date() + Math.round(t3 * r2)), l3);
-          };
-          if ($2 === c)
-            return this.set(c, this.$M + r2);
-          if ($2 === h)
-            return this.set(h, this.$y + r2);
-          if ($2 === a)
-            return y2(1);
-          if ($2 === o3)
-            return y2(7);
-          var M3 = (d2 = {}, d2[s] = e3, d2[u] = n2, d2[i2] = t2, d2)[$2] || 1, m3 = this.$d.getTime() + r2 * M3;
-          return b.w(m3, this);
-        }, m2.subtract = function(t3, e4) {
-          return this.add(-1 * t3, e4);
-        }, m2.format = function(t3) {
-          var e4 = this, n3 = this.$locale();
-          if (!this.isValid())
-            return n3.invalidDate || l2;
-          var r2 = t3 || "YYYY-MM-DDTHH:mm:ssZ", i3 = b.z(this), s2 = this.$H, u2 = this.$m, a2 = this.$M, o4 = n3.weekdays, c2 = n3.months, f2 = n3.meridiem, h2 = function(t4, n4, i4, s3) {
-            return t4 && (t4[n4] || t4(e4, r2)) || i4[n4].slice(0, s3);
-          }, d2 = function(t4) {
-            return b.s(s2 % 12 || 12, t4, "0");
-          }, $2 = f2 || function(t4, e5, n4) {
-            var r3 = t4 < 12 ? "AM" : "PM";
-            return n4 ? r3.toLowerCase() : r3;
-          };
-          return r2.replace(y, function(t4, r3) {
-            return r3 || function(t5) {
-              switch (t5) {
-                case "YY":
-                  return String(e4.$y).slice(-2);
-                case "YYYY":
-                  return b.s(e4.$y, 4, "0");
-                case "M":
-                  return a2 + 1;
-                case "MM":
-                  return b.s(a2 + 1, 2, "0");
-                case "MMM":
-                  return h2(n3.monthsShort, a2, c2, 3);
-                case "MMMM":
-                  return h2(c2, a2);
-                case "D":
-                  return e4.$D;
-                case "DD":
-                  return b.s(e4.$D, 2, "0");
-                case "d":
-                  return String(e4.$W);
-                case "dd":
-                  return h2(n3.weekdaysMin, e4.$W, o4, 2);
-                case "ddd":
-                  return h2(n3.weekdaysShort, e4.$W, o4, 3);
-                case "dddd":
-                  return o4[e4.$W];
-                case "H":
-                  return String(s2);
-                case "HH":
-                  return b.s(s2, 2, "0");
-                case "h":
-                  return d2(1);
-                case "hh":
-                  return d2(2);
-                case "a":
-                  return $2(s2, u2, true);
-                case "A":
-                  return $2(s2, u2, false);
-                case "m":
-                  return String(u2);
-                case "mm":
-                  return b.s(u2, 2, "0");
-                case "s":
-                  return String(e4.$s);
-                case "ss":
-                  return b.s(e4.$s, 2, "0");
-                case "SSS":
-                  return b.s(e4.$ms, 3, "0");
-                case "Z":
-                  return i3;
-              }
-              return null;
-            }(t4) || i3.replace(":", "");
-          });
-        }, m2.utcOffset = function() {
-          return 15 * -Math.round(this.$d.getTimezoneOffset() / 15);
-        }, m2.diff = function(r2, d2, l3) {
-          var $2, y2 = this, M3 = b.p(d2), m3 = O(r2), v2 = (m3.utcOffset() - this.utcOffset()) * e3, g2 = this - m3, D2 = function() {
-            return b.m(y2, m3);
-          };
-          switch (M3) {
-            case h:
-              $2 = D2() / 12;
-              break;
-            case c:
-              $2 = D2();
-              break;
-            case f:
-              $2 = D2() / 3;
-              break;
-            case o3:
-              $2 = (g2 - v2) / 6048e5;
-              break;
-            case a:
-              $2 = (g2 - v2) / 864e5;
-              break;
-            case u:
-              $2 = g2 / n2;
-              break;
-            case s:
-              $2 = g2 / e3;
-              break;
-            case i2:
-              $2 = g2 / t2;
-              break;
-            default:
-              $2 = g2;
-          }
-          return l3 ? $2 : b.a($2);
-        }, m2.daysInMonth = function() {
-          return this.endOf(c).$D;
-        }, m2.$locale = function() {
-          return D[this.$L];
-        }, m2.locale = function(t3, e4) {
-          if (!t3)
-            return this.$L;
-          var n3 = this.clone(), r2 = w(t3, e4, true);
-          return r2 && (n3.$L = r2), n3;
-        }, m2.clone = function() {
-          return b.w(this.$d, this);
-        }, m2.toDate = function() {
-          return new Date(this.valueOf());
-        }, m2.toJSON = function() {
-          return this.isValid() ? this.toISOString() : null;
-        }, m2.toISOString = function() {
-          return this.$d.toISOString();
-        }, m2.toString = function() {
-          return this.$d.toUTCString();
-        }, M2;
-      }(), k = _.prototype;
-      return O.prototype = k, [["$ms", r], ["$s", i2], ["$m", s], ["$H", u], ["$W", a], ["$M", c], ["$y", h], ["$D", d]].forEach(function(t3) {
-        k[t3[1]] = function(e4) {
-          return this.$g(e4, t3[0], t3[1]);
-        };
-      }), O.extend = function(t3, e4) {
-        return t3.$i || (t3(e4, _, O), t3.$i = true), O;
-      }, O.locale = w, O.isDayjs = S, O.unix = function(t3) {
-        return O(1e3 * t3);
-      }, O.en = D[g], O.Ls = D, O.p = {}, O;
-    });
-  }
-});
-
 // node_modules/.pnpm/dayjs@1.11.10/node_modules/dayjs/plugin/weekday.js
 var require_weekday = __commonJS({
   "node_modules/.pnpm/dayjs@1.11.10/node_modules/dayjs/plugin/weekday.js"(exports, module2) {
@@ -36081,6 +36081,7 @@ var Item = class {
 
 // src/util.ts
 var import_obsidian4 = require("obsidian");
+var import_dayjs = __toESM(require_dayjs_min());
 
 // src/constant.ts
 var ERROR_MESSAGES = {
@@ -36154,7 +36155,7 @@ async function createFile(app, options) {
 function isDarkTheme() {
   var _a;
   const el = document.querySelector("body");
-  return (_a = el == null ? void 0 : el.className.includes("theme-dark")) != null ? _a : false;
+  return (_a = el == null ? void 0 : el.className.split(" ").includes("theme-dark")) != null ? _a : false;
 }
 function formatDailyRecord(record) {
   const { createdTs, createdAt, content, resourceList } = record;
@@ -36199,6 +36200,43 @@ function generateHeaderRegExp(header) {
   const reg = new RegExp(`(${formattedHeader}[^
 ]*)([\\s\\S]*?)(?=\\n##|$)`);
   return reg;
+}
+async function createPeriodicFile(day, periodType, periodicNotesPath, app) {
+  if (!app || !periodicNotesPath) {
+    return;
+  }
+  const locale6 = window.localStorage.getItem("language") || "en";
+  const date4 = (0, import_dayjs.default)(day.format()).locale(locale6);
+  let templateFile = "";
+  let folder = "";
+  let file = "";
+  const year = date4.format("YYYY");
+  let value;
+  if (periodType === DAILY) {
+    folder = `${periodicNotesPath}/${year}/${periodType}/${String(
+      date4.month() + 1
+    ).padStart(2, "0")}`;
+    value = date4.format("YYYY-MM-DD");
+  } else if (periodType === WEEKLY) {
+    folder = `${periodicNotesPath}/${date4.format("gggg")}/${periodType}`;
+    value = date4.format("gggg-[W]ww");
+  } else if (periodType === MONTHLY) {
+    folder = `${periodicNotesPath}/${year}/${periodType}`;
+    value = date4.format("YYYY-MM");
+  } else if (periodType === QUARTERLY) {
+    folder = `${periodicNotesPath}/${year}/${periodType}`;
+    value = date4.format("YYYY-[Q]Q");
+  } else if (periodType === YEARLY) {
+    folder = `${periodicNotesPath}/${year}`;
+    value = year;
+  }
+  file = `${folder}/${value}.md`;
+  templateFile = `${periodicNotesPath}/Templates/${periodType}.md`;
+  await createFile(app, {
+    templateFile,
+    folder,
+    file
+  });
 }
 
 // src/para/Project.ts
@@ -58648,20 +58686,20 @@ if (true) {
 var EllipsisOutlined_default2 = /* @__PURE__ */ React121.forwardRef(EllipsisOutlined2);
 
 // node_modules/.pnpm/rc-picker@3.14.6_dayjs@1.11.10_react-dom@18.2.0_react@18.2.0/node_modules/rc-picker/es/generate/dayjs.js
-var import_dayjs = __toESM(require_dayjs_min());
+var import_dayjs2 = __toESM(require_dayjs_min());
 var import_weekday = __toESM(require_weekday());
 var import_localeData = __toESM(require_localeData());
 var import_weekOfYear = __toESM(require_weekOfYear());
 var import_weekYear = __toESM(require_weekYear());
 var import_advancedFormat = __toESM(require_advancedFormat());
 var import_customParseFormat = __toESM(require_customParseFormat());
-import_dayjs.default.extend(import_customParseFormat.default);
-import_dayjs.default.extend(import_advancedFormat.default);
-import_dayjs.default.extend(import_weekday.default);
-import_dayjs.default.extend(import_localeData.default);
-import_dayjs.default.extend(import_weekOfYear.default);
-import_dayjs.default.extend(import_weekYear.default);
-import_dayjs.default.extend(function(o3, c) {
+import_dayjs2.default.extend(import_customParseFormat.default);
+import_dayjs2.default.extend(import_advancedFormat.default);
+import_dayjs2.default.extend(import_weekday.default);
+import_dayjs2.default.extend(import_localeData.default);
+import_dayjs2.default.extend(import_weekOfYear.default);
+import_dayjs2.default.extend(import_weekYear.default);
+import_dayjs2.default.extend(function(o3, c) {
   var proto = c.prototype;
   var oldFormat = proto.format;
   proto.format = function f(formatStr) {
@@ -58747,10 +58785,10 @@ var parseNoMatchNotice = function parseNoMatchNotice2() {
 var generateConfig = {
   // get
   getNow: function getNow() {
-    return (0, import_dayjs.default)();
+    return (0, import_dayjs2.default)();
   },
   getFixedDate: function getFixedDate(string3) {
-    return (0, import_dayjs.default)(string3, ["YYYY-M-DD", "YYYY-MM-DD"]);
+    return (0, import_dayjs2.default)(string3, ["YYYY-M-DD", "YYYY-MM-DD"]);
   },
   getEndDate: function getEndDate(date4) {
     return date4.endOf("month");
@@ -58814,7 +58852,7 @@ var generateConfig = {
   },
   locale: {
     getWeekFirstDay: function getWeekFirstDay(locale6) {
-      return (0, import_dayjs.default)().locale(parseLocale(locale6)).localeData().firstDayOfWeek();
+      return (0, import_dayjs2.default)().locale(parseLocale(locale6)).localeData().firstDayOfWeek();
     },
     getWeekFirstDate: function getWeekFirstDate(locale6, date4) {
       return date4.locale(parseLocale(locale6)).weekday(0);
@@ -58823,10 +58861,10 @@ var generateConfig = {
       return date4.locale(parseLocale(locale6)).week();
     },
     getShortWeekDays: function getShortWeekDays(locale6) {
-      return (0, import_dayjs.default)().locale(parseLocale(locale6)).localeData().weekdaysMin();
+      return (0, import_dayjs2.default)().locale(parseLocale(locale6)).localeData().weekdaysMin();
     },
     getShortMonths: function getShortMonths(locale6) {
-      return (0, import_dayjs.default)().locale(parseLocale(locale6)).localeData().monthsShort();
+      return (0, import_dayjs2.default)().locale(parseLocale(locale6)).localeData().monthsShort();
     },
     format: function format2(locale6, date4, _format) {
       return date4.locale(parseLocale(locale6)).format(_format);
@@ -58839,7 +58877,7 @@ var generateConfig = {
         if (format3.includes("wo") || format3.includes("Wo")) {
           var year = formatText.split("-")[0];
           var weekStr = formatText.split("-")[1];
-          var firstWeek = (0, import_dayjs.default)(year, "YYYY").startOf("year").locale(localeStr);
+          var firstWeek = (0, import_dayjs2.default)(year, "YYYY").startOf("year").locale(localeStr);
           for (var j = 0; j <= 52; j += 1) {
             var nextWeek = firstWeek.add(j, "week");
             if (nextWeek.format("Wo") === weekStr) {
@@ -58849,7 +58887,7 @@ var generateConfig = {
           parseNoMatchNotice();
           return null;
         }
-        var date4 = (0, import_dayjs.default)(formatText, format3, true).locale(localeStr);
+        var date4 = (0, import_dayjs2.default)(formatText, format3, true).locale(localeStr);
         if (date4.isValid()) {
           return date4;
         }
@@ -72148,7 +72186,7 @@ var theme_default = {
 
 // src/component/AddTemplate.tsx
 var import_reduce_css_calc = __toESM(require_dist());
-var import_dayjs3 = __toESM(require_dayjs_min());
+var import_dayjs4 = __toESM(require_dayjs_min());
 var import_en_US14 = __toESM(require_en_US7());
 var import_zh_CN = __toESM(require_zh_CN7());
 var import_zh_cn = __toESM(require_zh_cn());
@@ -72165,9 +72203,10 @@ var AddTemplate = () => {
   const [periodicActiveTab, setPeriodicActiveTab] = (0, import_react71.useState)(DAILY);
   const [paraActiveTab, setParaActiveTab] = (0, import_react71.useState)(PROJECT);
   const defaultType = (settings == null ? void 0 : settings.usePeriodicNotes) ? PERIODIC : PARA;
+  const [isDark, setDark] = (0, import_react71.useState)(isDarkTheme());
   const [type4, setType] = (0, import_react71.useState)(defaultType);
   const [form] = form_default.useForm();
-  const today = (0, import_dayjs3.default)(new Date());
+  const today = (0, import_dayjs4.default)(new Date());
   const SubmitButton = /* @__PURE__ */ React216.createElement(
     form_default.Item,
     {
@@ -72187,45 +72226,6 @@ var AddTemplate = () => {
       }
     )
   );
-  const createPeriodicFile = async (d) => {
-    const dates = (0, import_dayjs3.default)(d.format()).locale(locale5);
-    if (!app || !settings) {
-      return;
-    }
-    let templateFile = "";
-    let folder = "";
-    let file = "";
-    const year = dates.format("YYYY");
-    let value;
-    if (periodicActiveTab === DAILY) {
-      folder = `${settings.periodicNotesPath}/${year}/${periodicActiveTab}/${String(dates.month() + 1).padStart(
-        2,
-        "0"
-      )}`;
-      value = dates.format("YYYY-MM-DD");
-    } else if (periodicActiveTab === WEEKLY) {
-      folder = `${settings.periodicNotesPath}/${dates.format(
-        "gggg"
-      )}/${periodicActiveTab}`;
-      value = dates.format("gggg-[W]ww");
-    } else if (periodicActiveTab === MONTHLY) {
-      folder = `${settings.periodicNotesPath}/${year}/${periodicActiveTab}`;
-      value = dates.format("YYYY-MM");
-    } else if (periodicActiveTab === QUARTERLY) {
-      folder = `${settings.periodicNotesPath}/${year}/${periodicActiveTab}`;
-      value = dates.format("YYYY-[Q]Q");
-    } else if (periodicActiveTab === YEARLY) {
-      folder = `${settings.periodicNotesPath}/${year}`;
-      value = year;
-    }
-    file = `${folder}/${value}.md`;
-    templateFile = `${settings.periodicNotesPath}/Templates/${periodicActiveTab}.md`;
-    await createFile(app, {
-      templateFile,
-      folder,
-      file
-    });
-  };
   const createPARAFile = async (values) => {
     if (!app || !settings) {
       return;
@@ -72252,6 +72252,19 @@ var AddTemplate = () => {
       tag
     });
   };
+  (0, import_react71.useEffect)(() => {
+    const handleBodyClassChange = () => {
+      setDark(isDarkTheme());
+    };
+    const observer = new MutationObserver(handleBodyClassChange);
+    observer.observe(document.body, {
+      attributes: true,
+      attributeFilter: ["class"]
+    });
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
   return /* @__PURE__ */ React216.createElement(
     config_provider_default,
     {
@@ -72270,7 +72283,7 @@ var AddTemplate = () => {
             cellHeight: 30
           }
         },
-        algorithm: isDarkTheme() ? theme_default.darkAlgorithm : theme_default.defaultAlgorithm
+        algorithm: isDark ? theme_default.darkAlgorithm : theme_default.defaultAlgorithm
       }
     },
     /* @__PURE__ */ React216.createElement(
@@ -72332,7 +72345,14 @@ var AddTemplate = () => {
                 children: /* @__PURE__ */ React216.createElement(form_default.Item, { name: periodic }, /* @__PURE__ */ React216.createElement(
                   date_picker_default,
                   {
-                    onSelect: createPeriodicFile,
+                    onSelect: (day) => {
+                      createPeriodicFile(
+                        day,
+                        periodicActiveTab,
+                        settings.periodicNotesPath,
+                        app
+                      );
+                    },
                     picker,
                     showToday: false,
                     style: { width: 200 },
@@ -72489,6 +72509,7 @@ var PeriodicPARAView = class extends import_obsidian13.ItemView {
 };
 
 // src/main.ts
+var import_dayjs5 = __toESM(require_dayjs_min());
 var PeriodicPARA = class extends import_obsidian14.Plugin {
   constructor(app, manifest) {
     super(app, manifest);
@@ -72526,9 +72547,23 @@ var PeriodicPARA = class extends import_obsidian14.Plugin {
     const item = this.addRibbonIcon("zap", "Periodic PARA", this.initView);
     (0, import_obsidian14.setIcon)(item, "zap");
     this.addCommand({
-      id: "periodic-para",
+      id: "periodic-para-create-notes",
       name: "Create Notes",
       callback: this.initView
+    });
+    [DAILY, WEEKLY, MONTHLY, QUARTERLY, YEARLY].map((periodType) => {
+      this.addCommand({
+        id: `periodic-para-create-${periodType.toLocaleLowerCase()}-note`,
+        name: `Create ${periodType} Note`,
+        callback: () => {
+          createPeriodicFile(
+            (0, import_dayjs5.default)(),
+            periodType,
+            this.settings.periodicNotesPath,
+            this.app
+          );
+        }
+      });
     });
     this.addCommand({
       id: "periodic-para-life-os-guide",
@@ -72571,12 +72606,12 @@ var PeriodicPARA = class extends import_obsidian14.Plugin {
       this.dailyRecord = new DailyRecord(this.app, this.settings, this.file);
       this.addCommand({
         id: "periodic-para-sync-daily-record",
-        name: "Sync daily record",
+        name: "Sync Daily Records",
         callback: this.dailyRecord.sync
       });
       this.addCommand({
         id: "periodic-para-force-sync-daily-record",
-        name: "Force sync daily record",
+        name: "Force Sync Daily Records",
         callback: this.dailyRecord.forceSync
       });
       clearTimeout(this.timeout);

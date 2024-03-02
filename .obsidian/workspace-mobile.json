@@ -1,0 +1,216 @@
+{
+  "main": {
+    "id": "6fd278ef090b237a",
+    "type": "split",
+    "children": [
+      {
+        "id": "e0ae73e7d652f637",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4de32963b7c6d34d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0. PeriodicNotes/Templates/Daily.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c537dff1fd506993",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "更换购买的美区id密码.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ebb345bfbc211075",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0. PeriodicNotes/2024/Daily/02/2024-02-26.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1a4a197a151efa28",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "6a04cf41cd3be973",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "215ff88510356f6c",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "待办",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "51ead49672237887",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true
+          }
+        }
+      },
+      {
+        "id": "acbb79c727041190",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {}
+        }
+      }
+    ],
+    "currentTab": 1
+  },
+  "right": {
+    "id": "6eadaadfb99a297c",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "53502e637fe4f8c6",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "0. PeriodicNotes/2024/Daily/02/2024-02-26.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "28fb43150d67d738",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "0. PeriodicNotes/2024/Daily/02/2024-02-26.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "f05f821d349abfbe",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "0. PeriodicNotes/2024/Daily/02/2024-02-26.md"
+          }
+        }
+      },
+      {
+        "id": "a820dcde194c4731",
+        "type": "leaf",
+        "state": {
+          "type": "periodic-para",
+          "state": {}
+        }
+      }
+    ],
+    "currentTab": 3
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "remotely-save:Remotely Save": false,
+      "templater-obsidian:Templater": false,
+      "periodic-para:Periodic PARA": false
+    }
+  },
+  "active": "ebb345bfbc211075",
+  "lastOpenFiles": [
+    "韩剧-窥探.md",
+    "获取影视资源.md",
+    "0. PeriodicNotes/2024/Daily/02/2024-02-26.md",
+    "摩天大楼.md",
+    "0. PeriodicNotes/2024/Daily/02/2024-02-25.md",
+    "待办.md",
+    "1. Projects/打造个人博客品牌/打造个人博客品牌.README.md",
+    "2. Areas/允许时光虚度/允许时光虚度.README.md",
+    "1. Projects/打造个人博客品牌",
+    "4. Archives/parenting-take-a-name/take-a-name.README.md",
+    "2. Areas/允许时光虚度",
+    "iPad如何使用微信付款微信读书.md",
+    "电视剧.md",
+    "允许时光虚度.md",
+    "2. Areas/羽毛球/羽毛球.README.md",
+    "5. Express/README.md",
+    "人生在于尝试.md",
+    "TASK.md",
+    "0. PeriodicNotes/Templates/Daily.md",
+    "更换购买的美区id密码.md",
+    "出行计划.md",
+    "0. PeriodicNotes/2024/Daily/02/2024-02-23.md",
+    "0. PeriodicNotes/2024/Daily/02/2024-02-22.md",
+    "Welcome.md",
+    "0. PeriodicNotes/2024/Daily/02/2024-02-21.md",
+    "0. PeriodicNotes/2024/Daily/02/2024-02-28.md",
+    "0. PeriodicNotes/2023/Daily/06/2023-06-01.md",
+    "obsidian手机和iPad同步方案.md",
+    "1. Projects/personal-brand-wot-sharing-meeting/Front-end Engineering Practice of ByteDance.pdf",
+    "1. Projects/personal-brand-wot-sharing-meeting/architecture diagram/Monorepo.svg",
+    "2. Areas/羽毛球",
+    "HOME.canvas",
+    "4. Archives/parenting-take-a-name/program/index.js",
+    "4. Archives/parenting-take-a-name/program/package.json",
+    "1. Projects/personal-brand-wot-sharing-meeting/architecture diagram/Polyrepo.svg",
+    "0. PeriodicNotes/2024/Daily/02",
+    "0. PeriodicNotes/2023/Daily/06",
+    "0. PeriodicNotes/2024/Daily",
+    "0. PeriodicNotes/2023/Daily",
+    "未命名.canvas"
+  ]
+}

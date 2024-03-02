@@ -1,6 +1,4 @@
 {
-  "folder": "0. PeriodicNotes",
-  "template": "0. PeriodicNotes/Templates/Daily",
-  "autorun": false,
-  "format": "YYYY/[Daily]/MM/YYYY-MM-DD"
+  "folder": "",
+  "autorun": false
 }
