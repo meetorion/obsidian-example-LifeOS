@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. Areas/python/python.README.md",
+                "file": "0. PeriodicNotes/2024/Daily/03/archlinux如何安装deb应用.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -93,8 +93,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -114,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. Areas/python/python.README.md",
+                "file": "0. PeriodicNotes/2024/Daily/03/archlinux如何安装deb应用.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. Areas/python/python.README.md"
+                "file": "0. PeriodicNotes/2024/Daily/03/archlinux如何安装deb应用.md"
               }
             }
           },
@@ -136,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. Areas/python/python.README.md",
+                "file": "0. PeriodicNotes/2024/Daily/03/archlinux如何安装deb应用.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -180,55 +179,55 @@
       "periodic-para:Periodic PARA": false
     }
   },
-  "active": "cc8540b919f4ee67",
+  "active": "e51918b63a868167",
   "lastOpenFiles": [
-    "0. PeriodicNotes/2024/Daily/02/为什么adoc cicd不支持图片名字为中文的情况.md",
-    "0. PeriodicNotes/2024/Daily/03/python基本语法.md",
-    "0. PeriodicNotes/2024/Daily/03/为什么在循环过程中修改被迭代对象是不安全的.md",
-    "0. PeriodicNotes/2024/Daily/03/2024-03-02.md",
-    "2. Areas/python/python.README.md",
+    "0. PeriodicNotes/2024/Daily/03/2024-03-08.md",
+    "0. PeriodicNotes/2024/Daily/03/archlinux如何安装deb应用.md",
+    "主题月生活法.md",
+    "如何并发地执行leopard集成测试.md",
+    "修复bug：save pandas df.md",
+    "assets/imgs/使用Kryo序列化.png",
+    "如何给timelyrestorage换so包.md",
+    "assets/imgs/1709621344-.png",
+    "1. Projects/Leopard/数字索引.md",
+    "1. Projects/Leopard/alpha046.md",
+    "1. Projects/Leopard/alpha012.md",
+    "Pasted image 20240307115505.png",
+    "1. Projects/Leopard/代码开发如何调优.md",
+    "Pasted image 20240305145033.png",
+    "1. Projects/Leopard/如何划分stage.md",
+    "1. Projects/Leopard/使用Kryo序列化.md",
+    "1. Projects/Leopard/为什么会有数据倾斜.md",
+    "1. Projects/Leopard/如何解决数据倾斜问题.md",
+    "1. Projects/Leopard/adoc如何插入图片.md",
+    "1. Projects/Leopard/leopard性能优化.md",
+    "1. Projects/Leopard/adoc如何插入行内代码.md",
+    "1. Projects/Leopard/Spark如何减少内存消耗.md",
+    "2. Areas/打造个人博客品牌/打造个人博客品牌.README.md",
+    "1. Projects/Leopard/执行计划之Exchange.md",
+    "1. Projects/Leopard/timelyre存储底层架构.md",
+    "1. Projects/Leopard/如何修改Spark的执行计划.md",
+    "1. Projects/Leopard/Spark是如何划分Job的.md",
+    "1. Projects/Leopard/Leopard.README.md",
+    "docker为什么报错no space left on device.md",
+    "1. Projects/Leopard/官方如何推荐对资源参数进行调优.md",
+    "1. Projects/Leopard/attachments/Pasted image 20240305105932.png",
+    "1. Projects/Leopard/attachments",
+    "2. Areas/archlinux",
+    "assets/imgs",
+    "2. Areas/打造个人博客品牌",
+    "1. Projects/Leopard",
+    "daily",
+    "assets",
     "2. Areas/python",
-    "1. Projects/leopard/leopard.README.md",
-    "0. PeriodicNotes/2024/Daily/02/2024-02-29.md",
-    "2. Areas/Coding/为什么可以使用set进行bfs.md",
-    "2. Areas/Coding/Coding.README.md",
-    "4. Archives/parenting-take-a-name/take-a-name.README.md",
-    "0. PeriodicNotes/Templates/Yearly.md",
     "2. Areas/Coding",
-    "0. PeriodicNotes/Templates/Weekly.md",
-    "0. PeriodicNotes/Templates/Quarterly.md",
-    "0. PeriodicNotes/Templates/Monthly.md",
-    "0. PeriodicNotes/Templates/Daily.md",
-    "0. PeriodicNotes/2024/Daily/03/2024-03-01.md",
-    "随笔/李垚.md",
-    "随笔/吴瑶.md",
-    "随笔/待办.md",
-    "随笔/拜年.md",
-    "随笔/小小易.md",
-    "时间/日期组件.md",
-    "随笔/电视剧.md",
-    "随笔/情人节.md",
-    "随笔/心愿清单.md",
-    "随笔/朋友聚餐.md",
     "随笔/HOME.canvas",
     "1. Projects/leopard/attachments/02.上传.png",
     "1. Projects/leopard/attachments/01.产品包.png",
     "1. Projects/leopard/attachments/23.安装完成.png",
     "1. Projects/leopard/attachments/21.安装确认.png",
     "1. Projects/leopard/attachments/15.基础参数.png",
-    "1. Projects/leopard/attachments/22.安装开始.png",
-    "1. Projects/leopard/attachments/11.配置安全.png",
-    "1. Projects/leopard/attachments/17.展开详情.png",
-    "1. Projects/leopard/attachments/07.添加服务.png",
-    "1. Projects/leopard/attachments/19.自定义参数.png",
     "0. PeriodicNotes/2024/Weekly",
-    "1. Projects/leopard/attachments",
-    "notes/dailies",
-    "2. Areas/允许时光虚度",
-    "2. Areas/打造个人博客品牌",
-    "1. Projects/leopard",
-    "时间",
-    "随笔",
     "未命名.canvas",
     "HOME.canvas",
     "主页.canvas",
